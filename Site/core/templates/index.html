@@ -6,14 +6,25 @@
     <title>Title</title>
 </head>
 <body>
-<h1>Pessoas</h1>
-{% for item in pessoa %}
-<p>{{ item }}</p>
-{% endfor %}
 
-{% for item in carro %}
-<p>{{ item }}</p>
-{% endfor %}
+<table>
+    <tr>
+        <th>Nome</th>
+        <th>Sobrenome</th>
+        <th>CPF</th>
+        <th>Tempo de Servoço</th>
+        <th>Remuneração</th>
+    </tr>
+    {% for item in funcionario %}
+        <tr>
+            <td>{{ item.nome }}</td>
+            <td>{{ item.sobrenome }}</td>
+            <td>{{ item.cpf }}</td>
+            <td>{{ item.tempo_de_servico }}</td>
+            <td>{{ item.remuneracao }}</td>
+        </tr>
+    {% endfor %}
+</table>
 
 </body>
 </html>
