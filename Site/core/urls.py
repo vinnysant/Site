@@ -3,4 +3,5 @@ from Site.core import views
 
 urlpatterns = [
     url(r'^$', views.Home, name='Home'),
+
 ]
