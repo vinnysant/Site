@@ -16,3 +16,11 @@ class FuncionarioForm(forms.ModelForm):
     #senha = forms.CharField(label="Senha: ", widget=forms.PasswordInput(attrs={'placeholder': 'Senha'}))
     #def __init__(self, *args, **kwargs):
         #super(LoginForm, self).__init__(*args, **kwargs)
+class FuncionarioUpdate(forms.ModelForm):
+
+    class Meta:
+        model = Funcionario
+        fields = ('nome', 'sobrenome', 'cpf', 'tempo_de_servico', 'remuneracao')
+
+    def __init__(self, *args, **kwargs):
+        super(FuncionarioForm, self).__init__(*args, **kwargs)

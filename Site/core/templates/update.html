@@ -26,17 +26,15 @@
         <th>Remuneração</th>
     </tr>
 
-    {% for item in funcionario %}
-
     <tr>
-        <td>{{ item.nome }}</td>
-        <td>{{ item.sobrenome }}</td>
-        <td>{{ item.cpf }}</td>
-        <td>{{ item.tempo_de_servico }}</td>
-        <td>{{ item.remuneracao }}</td>
+        <td>{{ funcionario.nome }}</td>
+        <td>{{ funcionario.sobrenome }}</td>
+        <td>{{ funcionario.cpf }}</td>
+        <td>{{ funcionario.tempo_de_servico }}</td>
+        <td>{{ funcionario.remuneracao }}</td>
     </tr>
 
-    {% endfor %}
+
 
 </table></br>
 
